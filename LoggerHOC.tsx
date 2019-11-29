@@ -8,7 +8,7 @@ export default InputComponent => {
 
     render() {
       return (
-        <div style={{ backgroundColor: "red", padding: "10" }}>
+        <div style={{backgroundColor:'red', padding:'10px'}}>
           <InputComponent {...this.props} />
         </div>
       );
