@@ -4,6 +4,7 @@ import Hello from './Hello';
 import './style.css';
 
 import ButtonWrapper from './ButtonWrapper'
+import PropsParent from './PropsParent'
 
 interface AppProps { }
 interface AppState {
@@ -26,6 +27,11 @@ class App extends Component<AppProps, AppState> {
           Start editing to see some magic happen :)
         </p>
         <ButtonWrapper clickEvent = {() => alert("clicked")}/>
+        <PropsParent>
+        <div>
+        A,B,C
+        </div>
+        </PropsParent>
       </div>
 
     );
